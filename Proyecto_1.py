@@ -9,7 +9,7 @@ import scipy.stats as stats
 from scipy.stats import kurtosis, skew, shapiro, norm, t
 
 st.title('PROYECTO 1 - RIESGO DE MERCADO')
-st.subheader('Santiago Yael Morales Torres')
+st.subheader('Equipo: Santiago Yael Morales Torres')
 
 ### a) CARGAR LOS DATOS DESDE YAHOO FINANCE
 
