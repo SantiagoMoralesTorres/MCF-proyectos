@@ -90,7 +90,8 @@ if alpha:
     CVaR_par_norm = media_rend - desv_est_rend*norm.pdf(norm.ppf(alpha))/(1-alpha)
 
     #CVaR Paramétrico t-student
-    CVaR_par_t = rendimientos[stock][rendimientos[stock] <= VaR_par_t].mean()
+    v=5
+    CVaR_par_t = media_rend - desv_est_rend*((v+(t.ppf(alpha,v))**2)/(v-1))*(t.pdf(t.ppf(alpha,v),v)/(1-alpha))
     
     #CVaR Histórico
     CVaR_hist = rendimientos[stock][rendimientos[stock] <= VaR_hist].mean()
