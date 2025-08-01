@@ -226,3 +226,4 @@ if alpha_rwm:
     col17.metric("Violaciones VaR con volatilidad móvil", f"{Violaciones_VaR_vm:.4%}")
 
 
+
